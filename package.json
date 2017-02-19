@@ -7,5 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Alex Costa <alex@deanx.com.br> (deanx.com.br)",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deanx/book-list-generator.git"
+  },
+  "keywords": [
+    "book-list book"
+  ],
+  "bugs": {
+    "url": "https://github.com/deanx/book-list-generator/issues"
+  },
+  "homepage": "https://github.com/deanx/book-list-generator#readme"
 }
