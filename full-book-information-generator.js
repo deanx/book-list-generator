@@ -64,8 +64,17 @@ function __authorName() {
 }
 
 function __gender(name) {
-  // from https://github.com/mopsled/gender
-  // for prodution we should make a fork to allow multiple queries. So we would not parse files every time 
-  const gender = Gender.guess(name).gender;
-  return gender === 'unknown' ? 'male' : gender;
+  /**
+   *  from https://github.com/mopsled/gender
+   *for prodution we should make a fork to allow multiple queries. So we would not parse files every time 
+   **/
+
+  // gender makes FS access. Webpack breaks on it!
+  return faker.random.arrayElement(["male", "female"]);
+
+
+  //const gender = Gender.guess(name).gender;
+  //return gender === 'unknown' ? 'male' : gender;
+
+
 }
