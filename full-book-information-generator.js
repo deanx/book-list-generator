@@ -27,9 +27,14 @@ function bookGeneratorJSON(numberOfBooks = 100) {
   return JSON.stringify(bookGenerator(numberOfBooks).toJS());
 }
 
+function bookGeneratorJS(numberOfBooks = 100) {
+  return bookGenerator(numberOfBooks).toJS();
+}
+
 module.exports = {
   bookGenerator,
-  bookGeneratorJSON
+  bookGeneratorJSON,
+  bookGeneratorJS
 }
 
 /**
